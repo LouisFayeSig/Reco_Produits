@@ -1,5 +1,6 @@
-# Reco Matériaux — Training & API
+# Reco Matériaux 
 
+## Training & API local
 Système de recommandation **« panier → compléments »** pour le négoce BTP, basé sur **LightFM** + **heuristiques de paires** (directionnelles et inverses), avec :
 - Professions (métier) explicites **ou** auto‑détection à partir du panier
 - Paires directionnelles A→B et **paires inverses** ?→B pour retrouver les « prédécesseurs »
