@@ -1,0 +1,16 @@
+# === NumPy/SciPy (ABI stables, compatibles LightFM côté training) ===
+numpy==1.26.4
+scipy==1.11.4
+
+# === FastAPI stack (versions cohérentes entre elles) ===
+fastapi==0.115.0
+starlette==0.38.6
+pydantic==2.9.2
+pydantic-core==2.23.4
+typing-extensions==4.15.0
+
+# === Uvicorn production-ready (standard = uvloop + httptools + websockets + watchfiles) ===
+uvicorn[standard]==0.30.6
+
+# === Utilitaires ===
+python-dotenv==1.1.1

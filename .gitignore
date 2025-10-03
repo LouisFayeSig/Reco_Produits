@@ -1,0 +1,6 @@
+training/.venv-training/
+.env
+api/.venv-api
+.venv
+artifacts
+training/data

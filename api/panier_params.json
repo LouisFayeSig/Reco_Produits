@@ -1,0 +1,74 @@
+{
+  "active": "precision_pair_heavy_v2",
+  "profiles": {
+    "precision_pair_heavy_v2": {
+      "basket_params_by_size": {
+        "1": { "W_PAIR": 0.75, "W_EMB": 0.20, "W_POPP": 0.15, "W_POPG": 0.0,
+               "PAIR_ANY_WEIGHT": 0.40,
+               "TOP_PAIRS": 3500, "TOP_POPP": 1000, "TOP_POPG": 100, "TOP_PAIRS_ANY_FRAC": 0.25,
+               "PAIR_QUOTA": 2,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.75, "CAP_PER_GAMME": 2,
+               "W_PL_BASE": 0.12, "W_PL_PER_BASK_PL": 0.18 },
+        "2": { "W_PAIR": 0.70, "W_EMB": 0.25, "W_POPP": 0.15, "W_POPG": 0.0,
+               "PAIR_ANY_WEIGHT": 0.45,
+               "TOP_PAIRS": 3200, "TOP_POPP": 1200, "TOP_POPG": 150, "TOP_PAIRS_ANY_FRAC": 0.25,
+               "PAIR_QUOTA": 2,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.72, "CAP_PER_GAMME": 2,
+               "W_PL_BASE": 0.12, "W_PL_PER_BASK_PL": 0.18 },
+        "3": { "W_PAIR": 0.65, "W_EMB": 0.28, "W_POPP": 0.18, "W_POPG": 0.0,
+               "PAIR_ANY_WEIGHT": 0.50,
+               "TOP_PAIRS": 3000, "TOP_POPP": 1400, "TOP_POPG": 200, "TOP_PAIRS_ANY_FRAC": 0.28,
+               "PAIR_QUOTA": 2,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.72, "CAP_PER_GAMME": 2,
+               "W_PL_BASE": 0.12, "W_PL_PER_BASK_PL": 0.18 },
+        "4": { "W_PAIR": 0.60, "W_EMB": 0.30, "W_POPP": 0.20, "W_POPG": 0.0,
+               "PAIR_ANY_WEIGHT": 0.55,
+               "TOP_PAIRS": 2800, "TOP_POPP": 1500, "TOP_POPG": 250, "TOP_PAIRS_ANY_FRAC": 0.30,
+               "PAIR_QUOTA": 2,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.70, "CAP_PER_GAMME": 2,
+               "W_PL_BASE": 0.12, "W_PL_PER_BASK_PL": 0.18 },
+        "5": { "W_PAIR": 0.60, "W_EMB": 0.30, "W_POPP": 0.20, "W_POPG": 0.0,
+               "PAIR_ANY_WEIGHT": 0.55,
+               "TOP_PAIRS": 2600, "TOP_POPP": 1600, "TOP_POPG": 300, "TOP_PAIRS_ANY_FRAC": 0.30,
+               "PAIR_QUOTA": 3,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.70, "CAP_PER_GAMME": 2,
+               "W_PL_BASE": 0.12, "W_PL_PER_BASK_PL": 0.18 }
+      }
+    },
+
+    "diversity_friendly_v2": {
+      "basket_params_by_size": {
+        "1": { "W_PAIR": 0.50, "W_EMB": 0.35, "W_POPP": 0.20, "W_POPG": 0.05,
+               "PAIR_ANY_WEIGHT": 0.60,
+               "TOP_PAIRS": 2400, "TOP_POPP": 1600, "TOP_POPG": 400, "TOP_PAIRS_ANY_FRAC": 0.35,
+               "PAIR_QUOTA": 1,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.60, "CAP_PER_GAMME": 1,
+               "W_PL_BASE": 0.08, "W_PL_PER_BASK_PL": 0.12 },
+        "2": { "W_PAIR": 0.48, "W_EMB": 0.35, "W_POPP": 0.20, "W_POPG": 0.05,
+               "PAIR_ANY_WEIGHT": 0.60,
+               "TOP_PAIRS": 2400, "TOP_POPP": 1700, "TOP_POPG": 450, "TOP_PAIRS_ANY_FRAC": 0.35,
+               "PAIR_QUOTA": 1,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.60, "CAP_PER_GAMME": 1,
+               "W_PL_BASE": 0.08, "W_PL_PER_BASK_PL": 0.12 },
+        "3": { "W_PAIR": 0.46, "W_EMB": 0.36, "W_POPP": 0.18, "W_POPG": 0.06,
+               "PAIR_ANY_WEIGHT": 0.65,
+               "TOP_PAIRS": 2300, "TOP_POPP": 1800, "TOP_POPG": 500, "TOP_PAIRS_ANY_FRAC": 0.38,
+               "PAIR_QUOTA": 1,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.60, "CAP_PER_GAMME": 1,
+               "W_PL_BASE": 0.08, "W_PL_PER_BASK_PL": 0.12 },
+        "4": { "W_PAIR": 0.45, "W_EMB": 0.35, "W_POPP": 0.18, "W_POPG": 0.07,
+               "PAIR_ANY_WEIGHT": 0.65,
+               "TOP_PAIRS": 2200, "TOP_POPP": 1900, "TOP_POPG": 550, "TOP_PAIRS_ANY_FRAC": 0.40,
+               "PAIR_QUOTA": 1,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.58, "CAP_PER_GAMME": 1,
+               "W_PL_BASE": 0.08, "W_PL_PER_BASK_PL": 0.12 },
+        "5": { "W_PAIR": 0.44, "W_EMB": 0.34, "W_POPP": 0.19, "W_POPG": 0.07,
+               "PAIR_ANY_WEIGHT": 0.65,
+               "TOP_PAIRS": 2200, "TOP_POPP": 2000, "TOP_POPG": 600, "TOP_PAIRS_ANY_FRAC": 0.40,
+               "PAIR_QUOTA": 1,
+               "DIVERSIFY": 1, "MMR_LAMBDA": 0.58, "CAP_PER_GAMME": 1,
+               "W_PL_BASE": 0.08, "W_PL_PER_BASK_PL": 0.12 }
+      }
+    }
+  }
+}
