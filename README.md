@@ -367,37 +367,37 @@ Dans le shell:
 ## 12. Dépannage & FAQ
 
 ### Aucun run valide trouvé au démarrage API
-→ Assurez-vous d’avoir au moins un artifacts/run_* complet.
-→ Utilisez --make-current-symlink pour créer run_current, ou positionnez ARTIFACT_DIR vers un run précis.
+- → Assurez-vous d’avoir au moins un artifacts/run_* complet.
+- → Utilisez --make-current-symlink pour créer run_current, ou positionnez ARTIFACT_DIR vers un run précis.
 
 ### item_emb_norm absent et aucun modèle dispo
-→ Soit item_emb_norm.npy manque, soit model.pkl est absent (ou DISABLE_MODEL_PICKLE=1).
-→ Refaites un training complet ou exécutez ops/save_precomputed.py sur un run.
+- → Soit item_emb_norm.npy manque, soit model.pkl est absent (ou DISABLE_MODEL_PICKLE=1).
+- → Refaites un training complet ou exécutez ops/save_precomputed.py sur un run.
 
 ### ABI NumPy/Pandas/Scipy (dtype size changed…)
-→ (Re)créez la venv et installez les versions pinnées des requirements.
+- → (Re)créez la venv et installez les versions pinnées des requirements.
 
 ### LightFM wheel / build
-→ Les requirements-train pinnenet une version compatible. Si vous buildiez localement, assurez-vous d’avoir un toolchain C correct.
+- → Les requirements-train pinnenet une version compatible. Si vous buildiez localement, assurez-vous d’avoir un toolchain C correct.
 
 ### Évals impossible : mapping.pkl manquant via run_current
-→ Créez/renouvelez le symlink run_current (ou passez un run_* explicite en --artifact-dir).
+- → Créez/renouvelez le symlink run_current (ou passez un run_* explicite en --artifact-dir).
 
 ---
 
 ## 13. Conseils d’usage & réglages
 
 - **Inclure tout le catalogue** : 
-  --include-all-items pour éviter que le filtre popularité limite trop (sinon on passe parfois de 300k → 2k).
-  Si nécessaire, utilisez --max-items pour limiter la taille en dev.
+  - --include-all-items pour éviter que le filtre popularité limite trop (sinon on passe parfois de 300k → 2k).
+  - Si nécessaire, utilisez --max-items pour limiter la taille en dev.
 
 - **Mettre en avant les MDD** :
-  Exportez item_is_pl.npy (fait par train_daily.py)
-  Ajustez W_PL_ABS, PL_MULT, et éventuellement W_PL_PER_BASK_PL, W_PL_BASE dans les profils.
+  - Exportez item_is_pl.npy (fait par train_daily.py)
+  - Ajustez W_PL_ABS, PL_MULT, et éventuellement W_PL_PER_BASK_PL, W_PL_BASE dans les profils.
 
 - **Profils faciles à maintenir** : 
-  utilisez "default", "N+" et quelques clés précises ("1", "2"…) plutôt que dupliquer les mêmes blocs.
+  - utilisez "default", "N+" et quelques clés précises ("1", "2"…) plutôt que dupliquer les mêmes blocs.
 
 - **Panier sans profession** : 
-  l’API auto-détecte un mix de métiers via les centroïdes d’items.
-  Réglages : PROFMIX_TOPK, PROFMIX_TEMP, PROFMIX_MINMASS.
+  - l’API auto-détecte un mix de métiers via les centroïdes d’items.
+  - Réglages : PROFMIX_TOPK, PROFMIX_TEMP, PROFMIX_MINMASS.
