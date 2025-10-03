@@ -76,16 +76,16 @@ Système de recommandation **« panier → compléments »** pour le négoce BTP
 - chmod +x api/setup.shchmod +x api/setup.sh
 - ./api/setup.sh
 
-**Note** : si vous avez eu des soucis de compatibilité NumPy/Pandas/Scipy, nous avons pinné des versions compatibles dans les requirements.
+**Note** : si vous avez eu des soucis de compatibilité NumPy/Pandas/Scipy, j'ai pinné des versions compatibles dans les requirements.
 
 ---
 
 ## 3. Jeux de données attendus 
 
 - Création possible via la commande:
-python creation_dataset.py \
--  --flag1
--  --flag2
+  - python creation_dataset.py \
+  -  --flag1
+  -  --flag2
 
 - ou make data --flag1 --flag2 
 
@@ -116,18 +116,18 @@ python creation_dataset.py \
 ## 4. Entraînenement (Training)
 
 ### Commande rapide avec **make**:
-make train \
--  --flag1
--  --flag2
--  ...
+- make train \
+  -  --flag1
+  -  --flag2
+  -  ...
 
 - En fin de run, make appelle verify_artifacts pour s’assurer que tous les artefacts attendus sont présents.
 
 ### Alternative:
-python training/train_daily.py \
--  --flag1
--  --flag2
--  ... 
+- python training/train_daily.py \
+  -  --flag1
+  -  --flag2
+  -  ... 
 
 ### a. Flags de base:
 - --ventes : localisation du db des ventes
